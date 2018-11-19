@@ -1,0 +1,7 @@
+com\sample\model\EuroCountry.class
+com\sample\model\EuroCountry$Country.class
+com\sample\EuroTaxCalculation\TaxCalculationEngine.class
+com\sample\model\EuroCountry$Type.class
+com\sample\model\Belgium.class
+com\sample\model\HelloCountry.class
+com\sample\model\Germany.class

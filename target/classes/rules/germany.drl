@@ -1,0 +1,30 @@
+package rules;
+import com.sample.model.EuroCountry;
+import com.sample.service.Germany;
+import java.math.BigDecimal;
+import com.sample.model.HelloCountry;
+
+// declare any global variables here
+dialect "java"
+rule "Germany Medicine Item"
+   
+   when
+      item : EuroCountry(purchaseCountry == EuroCountry.Country.Germany,
+                       typeofItem == EuroCountry.Type.MEDICINES)
+   
+   then
+      BigDecimal tax = new BigDecimal(2.0);
+      item.setLocalTax(tax.multiply(item.getSellPrice()));
+      HelloCountry.writeHello(item.getPurchaseCountry().toString());
+end
+
+rule "Germany Groceries Item"
+   
+   when
+      item : EuroCountry(purchaseCountry == EuroCountry.Country.Germany,
+                      typeofItem == EuroCountry.Type.GROCERIES)
+   
+   then
+      BigDecimal tax = new BigDecimal(2.0);
+      item.setLocalTax(tax.multiply(item.getSellPrice()));
+end
