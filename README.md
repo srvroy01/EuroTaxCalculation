@@ -50,8 +50,8 @@ RUNNING THE EXAMPLE
 
 1. Unzip the files EuroTaxCalculation.zip file to a folder on you hard drive.  
 2. After opening eclipse, import the codebase in Eclipse as "Import existing Maven Project"
-3. Click on Windows->Preferences Tab, click on Maven-> User Settings and check whether settings.xml is configured to the Maven local repoistory
-4.Refresh the project and run 'mvn clean install' either from the Eclipse IDE or from the command line. This will build and compile all the java classes. Wait till it shows " Build Success' on the console.
+3. Click on Windows->Preferences Tab, click on Maven-> User Settings and check whether settings.xml is configured to the Maven local repository.
+4. Refresh the project and run 'mvn clean install' either from the Eclipse IDE or from the command line. This will build and compile all the java classes. Wait till it shows " Build Success' on the console.
 5. Finally after sucessful maven compile, right click on the project folder EuroTaxCalculation and click on 'Run as java application'to see the output
 6.Numeric options will come to select the corresponding tax calculation for each country. Select the corresposnding option to ge the output tax percentage for the country.
 
